@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210127 12:32:06.179" rpa="false">
+<suite id="s1" name="Selenium Mini project" source="C:\Users\CTEA\eclipse-workspace4\Selenium Mini project">
+<suite id="s1-s1" name="Letskode suite" source="C:\Users\CTEA\eclipse-workspace4\Selenium Mini project\Letskode_suite">
+<suite id="s1-s1-s1" name="Loginletskode" source="C:\Users\CTEA\eclipse-workspace4\Selenium Mini project\Letskode_suite\Loginletskode.robot">
+<test id="s1-s1-s1-t1" name="TC1_ValidCredentialTest">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${OUTPUT_DIR}${/}driver</arg>
+</arguments>
+<status status="PASS" starttime="20210127 12:32:06.552" endtime="20210127 12:32:06.553"></status>
+</kw>
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>Path</arg>
+<arg>${OUTPUT_DIR}${/}driver</arg>
+</arguments>
+<msg timestamp="20210127 12:32:06.554" level="INFO">Environment variable 'Path' set to value 'C:/Program Files/Java/jre1.8.0_271/bin/server;C:/Program Files/Java/jre1.8.0_271/bin;C:/Program Files/Java/jre1.8.0_271/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\xampp\mysql\bin;C:\Xamp\mysql\bin;C:\WINDOWS\System32\OpenSSH\;C:\Anaconda practice;C:\Program Files\Git\cmd;C:\Program Files (x86)\Groovy\bin;C:\Users\CTEA\Downloads\jdk-8u281-windows-i586-demos;C:\jenkins;C:\Windows\System32\cmd.exe;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\CTEA\Desktop\Scripts\;C:\Users\CTEA\Desktop\;C:\Program Files\Java\jdk-15.0.1\bin;C:\Xamp\mysql\bin;C:\Users\CTEA\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin;C:\Users\CTEA\AppData\Local\Temp\apache-groovy-sdk-3.0.7.zip\groovy-3.0.7\bin;C:\Program Files (x86)\Groovy;C:\Program Files\Java\jre1.8.0_271\bin;C:\java;C:\Windows\System32\cmd.exe;C:\Users\CTEA\AppData\Roaming\npm;C:\Python;C:\Python\scripts;;C:\Users\CTEA\Downloads\eclipse-java-2019-12-R-win32-x86_64\eclipse;;C:\Users\CTEA\eclipse-workspace4\Selenium Mini project\driver'.</msg>
+<status status="PASS" starttime="20210127 12:32:06.553" endtime="20210127 12:32:06.556"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>url=https://letskodeit.teachable.com/p/practice</arg>
+<arg>browser=ff</arg>
+</arguments>
+<msg timestamp="20210127 12:32:06.557" level="INFO">Opening browser 'ff' to base url 'https://letskodeit.teachable.com/p/practice'.</msg>
+<msg timestamp="20210127 12:32:06.559" level="INFO">Firefox driver log is always forced to to: C:\Users\CTEA\eclipse-workspace4\Selenium Mini project\geckodriver-3.log</msg>
+<status status="PASS" starttime="20210127 12:32:06.556" endtime="20210127 12:32:22.159"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210127 12:32:22.159" endtime="20210127 12:32:22.433"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20210127 12:32:22.434" endtime="20210127 12:32:22.442"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=bmwradio</arg>
+</arguments>
+<msg timestamp="20210127 12:32:22.443" level="INFO">Clicking element 'id=bmwradio'.</msg>
+<status status="PASS" starttime="20210127 12:32:22.443" endtime="20210127 12:32:22.714"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=carselect</arg>
+</arguments>
+<msg timestamp="20210127 12:32:22.715" level="INFO">Clicking element 'id=carselect'.</msg>
+<status status="PASS" starttime="20210127 12:32:22.714" endtime="20210127 12:32:22.960"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//option[text()='Benz']</arg>
+</arguments>
+<msg timestamp="20210127 12:32:22.961" level="INFO">Clicking element '//option[text()='Benz']'.</msg>
+<status status="PASS" starttime="20210127 12:32:22.960" endtime="20210127 12:32:23.185"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//option[text()='Orange']</arg>
+</arguments>
+<msg timestamp="20210127 12:32:23.186" level="INFO">Clicking element '//option[text()='Orange']'.</msg>
+<status status="PASS" starttime="20210127 12:32:23.186" endtime="20210127 12:32:23.413"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='hondacheck']</arg>
+</arguments>
+<msg timestamp="20210127 12:32:23.414" level="INFO">Clicking element '//input[@id='hondacheck']'.</msg>
+<status status="PASS" starttime="20210127 12:32:23.413" endtime="20210127 12:32:23.639"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=openwindow</arg>
+</arguments>
+<msg timestamp="20210127 12:32:23.640" level="INFO">Clicking element 'id=openwindow'.</msg>
+<status status="PASS" starttime="20210127 12:32:23.639" endtime="20210127 12:32:24.027"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${actualtitle}</var>
+</assign>
+<msg timestamp="20210127 12:32:24.032" level="INFO">${actualtitle} = Practice | Let's Kode It</msg>
+<status status="PASS" starttime="20210127 12:32:24.027" endtime="20210127 12:32:24.032"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${actualtitle}</arg>
+</arguments>
+<status status="PASS" starttime="20210127 12:32:24.032" endtime="20210127 12:32:24.033"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${actualtitle}</arg>
+</arguments>
+<msg timestamp="20210127 12:32:24.034" level="INFO">Practice | Let's Kode It</msg>
+<status status="PASS" starttime="20210127 12:32:24.033" endtime="20210127 12:32:24.034"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210127 12:32:29.035" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210127 12:32:24.034" endtime="20210127 12:32:29.035"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=opentab</arg>
+</arguments>
+<msg timestamp="20210127 12:32:29.036" level="INFO">Clicking element 'id=opentab'.</msg>
+<status status="PASS" starttime="20210127 12:32:29.036" endtime="20210127 12:32:29.084"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20210127 12:32:29.222" level="INFO">${title} = Practice | Let's Kode It</msg>
+<status status="PASS" starttime="20210127 12:32:29.085" endtime="20210127 12:32:29.222"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${title}</arg>
+</arguments>
+<status status="PASS" starttime="20210127 12:32:29.223" endtime="20210127 12:32:29.223"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${title}</arg>
+</arguments>
+<msg timestamp="20210127 12:32:29.225" level="INFO">Practice | Let's Kode It</msg>
+<status status="PASS" starttime="20210127 12:32:29.224" endtime="20210127 12:32:29.225"></status>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20210127 12:32:29.225" endtime="20210127 12:32:29.353"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=mousehover</arg>
+</arguments>
+<msg timestamp="20210127 12:32:29.357" level="INFO">Clicking element 'id=mousehover'.</msg>
+<status status="PASS" starttime="20210127 12:32:29.354" endtime="20210127 12:32:29.601"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210127 12:32:34.604" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210127 12:32:29.602" endtime="20210127 12:32:34.604"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[text()='Top']</arg>
+</arguments>
+<msg timestamp="20210127 12:32:34.605" level="INFO">Clicking element '//a[text()='Top']'.</msg>
+<status status="PASS" starttime="20210127 12:32:34.605" endtime="20210127 12:32:34.650"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>//iframe[@id='courses-iframe']</arg>
+</arguments>
+<msg timestamp="20210127 12:32:34.651" level="INFO">Selecting frame '//iframe[@id='courses-iframe']'.</msg>
+<status status="PASS" starttime="20210127 12:32:34.651" endtime="20210127 12:32:34.668"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='search-courses']</arg>
+<arg>Learn Python 3 from Scratch</arg>
+</arguments>
+<msg timestamp="20210127 12:32:34.669" level="INFO">Typing text 'Learn Python 3 from Scratch' into text field '//input[@id='search-courses']'.</msg>
+<status status="PASS" starttime="20210127 12:32:34.669" endtime="20210127 12:32:34.817"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@id='search-course-button']</arg>
+</arguments>
+<msg timestamp="20210127 12:32:34.818" level="INFO">Clicking element '//button[@id='search-course-button']'.</msg>
+<status status="PASS" starttime="20210127 12:32:34.817" endtime="20210127 12:32:38.734"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=course-listing-extra-info</arg>
+</arguments>
+<msg timestamp="20210127 12:32:38.736" level="INFO">Clicking element 'class=course-listing-extra-info'.</msg>
+<status status="PASS" starttime="20210127 12:32:38.735" endtime="20210127 12:32:38.998"></status>
+</kw>
+<status status="PASS" starttime="20210127 12:32:06.551" endtime="20210127 12:32:38.999" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210127 12:32:06.273" endtime="20210127 12:32:39.000"></status>
+</suite>
+<status status="PASS" starttime="20210127 12:32:06.269" endtime="20210127 12:32:39.004"></status>
+</suite>
+<status status="PASS" starttime="20210127 12:32:06.234" endtime="20210127 12:32:39.006"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Selenium Mini project">Selenium Mini project</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Letskode suite">Selenium Mini project.Letskode suite</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Loginletskode">Selenium Mini project.Letskode suite.Loginletskode</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
